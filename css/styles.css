@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background: hsl(0, 0%, 95%);
+}
+
+/*Layout*/
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.container-autos {
+  display: flex;
+  flex-direction: column;
+  margin: 3em auto;
+  width: 90%;
+}
+
+.card {
+  padding: 2em 5.5em;
+  font-size: 0.8rem;
+  padding-bottom: 5em;
+}
+
+.icon-autos {
+  width: 25%;
+}
+.sedan {
+  background: hsl(31, 77%, 52%);
+  color: hsl(31, 77%, 52%);
+  border-radius: 5px 5px 0 0;
+}
+.suvs {
+  background: hsl(184, 100%, 22%);
+  color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background: hsl(179, 100%, 13%);
+  color: hsl(179, 100%, 13%);
+}
+/*Typo*/
+
+.title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 95%);
+  padding: 1em 0;
+  text-transform: uppercase;
+}
+.text {
+  line-height: 1.5;
+
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 3em;
+}
+
+/*Btns*/
+
+.btn {
+  padding: 1em 2em;
+  background: hsl(0, 0%, 95%);
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus {
+  border: 1px solid hsl(0, 0%, 95%);
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+/*MediaQ*/
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    margin: 13em;
+  }
+  .container-autos {
+    flex-direction: row;
+  }
+
+  .text {
+    margin-bottom: 6em;
+  }
+
+  .sedan {
+    border-radius: 5px 0 0 5px;
+  }
+  .luxury {
+    border-radius: 0 5px 5px 0;
+  }
+  .btn {
+    border-radius: 25px;
+  }
+
+  .icon-autos {
+    padding-top: 1em;
+  }
+}
